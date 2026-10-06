@@ -1,0 +1,12 @@
+name = input("Enter your name: ")
+role = input("Enter your role: ")
+email = input("Enter your email: ")
+phonenumber = int(input("Enter your phone number: "))
+skills = input("Enter your skills (comma-separated): ").split(',')
+
+print("\nProfile Card:")
+print("Name: {}".format(name))
+print("Role: {}".format(role))
+print("Email: {}".format(email))
+print("Phone Number: {}".format(phonenumber))
+print("Skills: {}".format(', '.join(skill.strip() for skill in skills)))
